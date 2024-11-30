@@ -13,4 +13,4 @@ setuptools==57.5.0
 wheel==0.37.1         
 scipy==1.9.3      
 werkzeug==2.2.3
-category_encoders=2.2.2
+category_encoders==2.2.2

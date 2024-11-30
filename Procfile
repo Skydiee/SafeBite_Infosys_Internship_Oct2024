@@ -1,1 +1,1 @@
-web: python AI_SafeBite_flask_api.py
+web: python Scripts/AI_SafeBite_flask_api.py

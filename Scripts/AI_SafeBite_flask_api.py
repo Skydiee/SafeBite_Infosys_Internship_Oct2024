@@ -6,12 +6,14 @@ import pandas as pd
 app = Flask(__name__)
 
 # Loading the models:
-with open("Model/leave_one_out_encoder.pkl", "rb") as file:
-    loaded_encoder = pickle.load(file)
+# with open("Model/leave_one_out_encoder.pkl", "rb") as file:
+#     loaded_encoder = pickle.load(file)
 
-with open("Model/random_forest_model.pkl", "rb") as file:
-    loaded_model = pickle.load(file)
+# with open("Model/random_forest_model.pkl", "rb") as file:
+#     loaded_model = pickle.load(file)
 
+loaded_encoder = joblib.load("Model/leave_one_out_encoder.pkl")
+loaded_model = joblib.load("Model/random_forest_model.pkl")
 
 @app.route('/')
 def home():

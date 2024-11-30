@@ -1,1 +1,1 @@
-web: gunicorn AI_SafeBite_flask_api:app
+web: python AI_SafeBite_flask_api.py
